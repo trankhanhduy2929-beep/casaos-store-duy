@@ -1,1 +1,16 @@
-{"name":"personal-timesheet","title":"Personal Timesheet","description":"Ứng dụng chấm công cá nhân","icon":"https://fsviet.com/image/data/ch%E1%BA%A5m%20c%C3%B4ng%201.jpg","compose":"docker-compose.yml","scheme":"http"}
+{
+  "name": "personal-timesheet",
+  "title": "Personal Timesheet",
+  "description": "Ứng dụng chấm công cá nhân",
+  "icon": "https://fsviet.com/image/data/ch%E1%BA%A5m%20c%C3%B4ng%201.jpg",
+  "compose": "docker-compose.yml",
+  "scheme": "http",
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "version": "1.0.1",
+  "category": "Productivity",
+  "port_map": "5555",
+  "store_app_id": "personal-timesheet"
+}

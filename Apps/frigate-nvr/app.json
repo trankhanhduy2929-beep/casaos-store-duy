@@ -1,1 +1,17 @@
-{"name":"frigate-nvr","title":"Frigate NVR","description":"NVR AI camera Frigate","icon":"https://raw.githubusercontent.com/mr-manuel/CasaOS-HomeAutomation-AppStore/latest/Apps/Frigate/icon.png","compose":"docker-compose.yml","scheme":"http"}
+{
+  "name": "frigate-nvr",
+  "title": "Frigate NVR",
+  "description": "NVR AI camera Frigate",
+  "icon": "https://raw.githubusercontent.com/mr-manuel/CasaOS-HomeAutomation-AppStore/latest/Apps/Frigate/icon.png",
+  "compose": "docker-compose.yml",
+  "scheme": "http",
+  "architectures": [
+    "amd64",
+    "arm64",
+    "arm"
+  ],
+  "version": "1.0.1",
+  "category": "Surveillance",
+  "port_map": "5000",
+  "store_app_id": "frigate-nvr-duy"
+}

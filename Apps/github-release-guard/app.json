@@ -1,1 +1,16 @@
-{"name":"github-release-guard","title":"GitHub Release Guard","description":"Upload scan publish GitHub releases","icon":"https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-icon.png","compose":"docker-compose.yml","scheme":"http"}
+{
+  "name": "github-release-guard",
+  "title": "GitHub Release Guard",
+  "description": "Upload scan publish GitHub releases",
+  "icon": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-icon.png",
+  "compose": "docker-compose.yml",
+  "scheme": "http",
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "version": "1.0.1",
+  "category": "Developer",
+  "port_map": "5566",
+  "store_app_id": "github-release-guard"
+}

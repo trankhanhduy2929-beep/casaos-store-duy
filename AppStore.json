@@ -1,7 +1,7 @@
 {
   "name": "Duy CasaOS App Store",
   "description": "Kho Docker Compose cho CasaOS của Duy",
-  "version": "1.1.1-localzip",
+  "version": "1.1.2-amd64fix",
   "apps": [
     {"name":"9router","title":"9Router","description":"9Router AI gateway/router","icon":"Apps/9router/icon.svg","compose":"Apps/9router/docker-compose.yml","app":"Apps/9router/app.json"},
     {"name":"shop-admin","title":"Shop Admin","description":"Web quản lý shop/admin","icon":"Apps/shop-admin/icon.svg","compose":"Apps/shop-admin/docker-compose.yml","app":"Apps/shop-admin/app.json"},
