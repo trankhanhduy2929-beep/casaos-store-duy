@@ -23,15 +23,19 @@ services:
     privileged: false
 
 x-casaos:
+  architectures:
+    - amd64
+    - arm64
   author: self
-  category: self
+  category: Productivity
   hostname: ""
   icon: https://fsviet.com/image/data/ch%E1%BA%A5m%20c%C3%B4ng%201.jpg
   index: /
   is_uncontrolled: false
+  main: personal-timesheet
   port_map: "5555"
   scheme: http
   store_app_id: personal-timesheet
   title:
     custom: ""
-    en_us: personal-timesheet
+    en_us: Personal Timesheet

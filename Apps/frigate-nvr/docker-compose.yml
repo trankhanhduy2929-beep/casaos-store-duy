@@ -126,7 +126,7 @@ x-casaos:
   port_map: "5000"
   project_url: https://github.com/mr-manuel/CasaOS-HomeAutomation-AppStore
   scheme: http
-  store_app_id: frigate
+  store_app_id: frigate-nvr-duy
   title:
     custom: ""
     en_us: Frigate NVR

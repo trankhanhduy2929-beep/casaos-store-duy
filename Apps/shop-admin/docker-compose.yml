@@ -25,15 +25,19 @@ services:
     privileged: false
 
 x-casaos:
+  architectures:
+    - amd64
+    - arm64
   author: self
-  category: self
+  category: Business
   hostname: ""
   icon: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2CLb-XoCLP5RL1Y-L8B8cGt24jaZGA7XvxQ&s
   index: /
   is_uncontrolled: false
+  main: shop-admin
   port_map: "1235"
   scheme: http
   store_app_id: shop-admin
   title:
     custom: ""
-    en_us: shop-admin
+    en_us: Shop Admin

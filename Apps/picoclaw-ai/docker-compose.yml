@@ -32,6 +32,9 @@ services:
     cap_add: []
     network_mode: bridge
 x-casaos:
+  architectures:
+    - amd64
+    - arm64
   author: self
   category: AI
   hostname: ""
@@ -45,7 +48,8 @@ x-casaos:
       host: 18800
       protocol: tcp
   scheme: http
-  store_app_id: picoclaw
+  store_app_id: picoclaw-ai
   title:
-    custom: PicoClaw AI
+    custom: ""
+    en_us: PicoClaw AI
   web_ui: http://[IP]:18800

@@ -28,15 +28,19 @@ services:
     network_mode: bridge
     privileged: false
 x-casaos:
+  architectures:
+    - amd64
+    - arm64
   author: self
-  category: self
+  category: Network
   hostname: ""
   icon: https://9router.com/9router-hero.jpg
   index: /
   is_uncontrolled: false
-  port_map: ""
+  main: 9router
+  port_map: "20128"
   scheme: http
-  store_app_id: sincere_renaud
+  store_app_id: 9router
   title:
     custom: ""
-    en_us: 9router
+    en_us: 9Router

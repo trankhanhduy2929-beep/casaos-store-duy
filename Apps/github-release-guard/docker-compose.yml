@@ -27,15 +27,19 @@ services:
     privileged: false
 
 x-casaos:
+  architectures:
+    - amd64
+    - arm64
   author: self
-  category: self
+  category: Developer
   hostname: ""
   icon: https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-icon.png
   index: /
   is_uncontrolled: false
+  main: github-release-guard
   port_map: "5566"
   scheme: http
   store_app_id: github-release-guard
   title:
     custom: ""
-    en_us: github-release-guard
+    en_us: GitHub Release Guard

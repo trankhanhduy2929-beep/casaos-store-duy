@@ -20,15 +20,19 @@ services:
     privileged: false
 
 x-casaos:
+  architectures:
+    - amd64
+    - arm64
   author: self
-  category: self
+  category: Education
   hostname: ""
   icon: https://png.pngtree.com/png-clipart/20231218/original/pngtree-icon-for-achievements-in-competitions-and-success-from-dualcolored-photo-png-image_13880222.png
   index: /
   is_uncontrolled: false
+  main: web-thi-ai-bao-mat
   port_map: "1234"
   scheme: http
   store_app_id: web-thi-ai-bao-mat
   title:
     custom: ""
-    en_us: web-thi-ai-bao-mat
+    en_us: Web Thi AI Bảo Mật

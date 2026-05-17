@@ -22,15 +22,19 @@ services:
     privileged: false
 
 x-casaos:
+  architectures:
+    - amd64
+    - arm64
   author: self
-  category: self
+  category: Business
   hostname: ""
   icon: https://bo-api.medpro.com.vn:5000/static/images/medpro/app/image/goi_kham.png?t=2333333
   index: /
   is_uncontrolled: false
+  main: yduc-booking-v2
   port_map: "3008"
   scheme: http
   store_app_id: yduc-booking-v2
   title:
     custom: ""
-    en_us: yduc-booking-v2
+    en_us: Y Đức Booking V2
