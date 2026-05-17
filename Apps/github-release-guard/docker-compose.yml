@@ -1,0 +1,41 @@
+name: github-release-guard
+services:
+  github-release-guard:
+    image: ghcr.io/trankhanhduy2929-beep/github-release-guard:latest
+    container_name: github-release-guard
+    restart: unless-stopped
+    environment:
+      - PORT=8080
+      - GITHUB_TOKEN=xxxxx
+      - DEFAULT_OWNER=xxxxx
+      - ADMIN_USERNAME=admin
+      - APP_PASSWORD=xxxxx
+      - SESSION_SECRET=replace-with-a-long-random-secret
+      - MAX_UPLOAD_MB=200
+    ports:
+      - target: 8080
+        published: "5566"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/github-release-guard/uploads
+        target: /app/uploads
+      - type: bind
+        source: /DATA/AppData/github-release-guard/data
+        target: /app/data
+    network_mode: bridge
+    privileged: false
+
+x-casaos:
+  author: self
+  category: self
+  hostname: ""
+  icon: https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-icon.png
+  index: /
+  is_uncontrolled: false
+  port_map: "5566"
+  scheme: http
+  store_app_id: github-release-guard
+  title:
+    custom: ""
+    en_us: github-release-guard

@@ -1,0 +1,1 @@
+{"name":"frigate-nvr","title":"Frigate NVR","description":"NVR AI camera Frigate","icon":"https://raw.githubusercontent.com/mr-manuel/CasaOS-HomeAutomation-AppStore/latest/Apps/Frigate/icon.png","compose":"docker-compose.yml","scheme":"http"}

@@ -1,0 +1,34 @@
+name: web-thi-ai-bao-mat
+services:
+  web-thi-ai-bao-mat:
+    image: ghcr.io/trankhanhduy2929-beep/web-thi-ai-bao-mat:latest
+    container_name: web-thi-ai-bao-mat
+    restart: unless-stopped
+    environment:
+      - PORT=80
+      - DOS_API_KEY=
+      - GROQ_API_KEY=
+    ports:
+      - target: 80
+        published: "1234"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/web-thi-ai-bao-mat/data
+        target: /app/data
+    network_mode: bridge
+    privileged: false
+
+x-casaos:
+  author: self
+  category: self
+  hostname: ""
+  icon: https://png.pngtree.com/png-clipart/20231218/original/pngtree-icon-for-achievements-in-competitions-and-success-from-dualcolored-photo-png-image_13880222.png
+  index: /
+  is_uncontrolled: false
+  port_map: "1234"
+  scheme: http
+  store_app_id: web-thi-ai-bao-mat
+  title:
+    custom: ""
+    en_us: web-thi-ai-bao-mat
