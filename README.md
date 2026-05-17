@@ -7,7 +7,8 @@ Kho cấu hình Docker Compose để add vào CasaOS.
 Sau khi push repo này lên GitHub public `trankhanhduy2929-beep/casaos-store-duy`, dùng link:
 
 ```text
-https://raw.githubusercontent.com/trankhanhduy2929-beep/casaos-store-duy/main/AppStore.json
+[https://raw.githubusercontent.com/trankhanhduy2929-beep/casaos-store-duy/main/AppStore.json](https://github.com/trankhanhduy2929-beep/casaos-store-duy/archive/refs/heads/main.zip
+)
 ```
 
 ## Cấu trúc
