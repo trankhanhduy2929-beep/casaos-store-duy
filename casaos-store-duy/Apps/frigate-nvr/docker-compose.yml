@@ -1,0 +1,132 @@
+name: frigate
+services:
+  frigate:
+    cpu_shares: 50
+    command: []
+    container_name: frigate
+    deploy:
+      resources:
+        limits:
+          memory: 4096M
+    devices:
+      - /dev/bus/usb:/dev/bus/usb
+      - /dev/apex_0:/dev/apex_0
+      - /dev/dri/renderD128:/dev/dri/renderD128
+    entrypoint:
+      - bash
+      - -c
+      - >-
+        if [ ! -f "/config/config.yml" ]; then
+          echo -n "No config file found. Create one... "
+          {
+            echo "# config generated on $(date +%Y.%m.%d\ %H:%M:%S)"
+            echo "mqtt:"
+            echo "  enabled: False"
+            echo ""
+            echo "cameras:"
+            echo "  sample_camera: # <------ Name the camera"
+            echo "    ffmpeg:"
+            echo "      inputs:"
+            echo "        - path: rtsp://192.168.255.10/stream # <----- The stream you want to use for detection"
+            echo "          roles:"
+            echo "            - detect"
+            echo "    detect:"
+            echo "      enabled: False # <---- disable detection until you have a working camera feed"
+            echo "      width: 1280 # <---- update for your camera resolution"
+            echo "      height: 720 # <---- update for your camera resolution"
+          } > /config/config.yml
+          if [ $? -eq 0 ]; then
+            echo "done."
+          else
+            echo "error."
+            exit 1
+          fi
+        fi
+
+        /init
+    environment:
+      - LIBVA_DRIVER_NAME=i965
+    hostname: frigate
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - curl --fail -s http://localhost:5000/ || exit 1
+      timeout: 10s
+      interval: 1m30s
+      retries: 3
+    image: ghcr.io/blakeblackshear/frigate:stable
+    labels:
+      icon: https://raw.githubusercontent.com/mr-manuel/CasaOS-HomeAutomation-AppStore/latest/Apps/Frigate/icon.png
+    ports:
+      - target: 5000
+        published: "5000"
+        protocol: tcp
+      - target: 8554
+        published: "8554"
+        protocol: tcp
+      - target: 8555
+        published: "8555"
+        protocol: tcp
+      - target: 8555
+        published: "8555"
+        protocol: udp
+      - target: 1984
+        published: "1984"
+        protocol: tcp
+    privileged: true
+    restart: unless-stopped
+    shm_size: "1073741824"
+    volumes:
+      - type: bind
+        source: /etc/localtime
+        target: /etc/localtime
+        read_only: true
+      - type: bind
+        source: /DATA/AppData/frigate/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/frigate/media
+        target: /media/frigate
+    x-casaos:
+      ports:
+        - container: "5000"
+          description:
+            en_us: Web GUI port
+        - container: "8554"
+          description:
+            en_us: RTSP feeds
+        - container: "8555"
+          description:
+            en_us: WebRTC over tcp and udp
+      volumes:
+        - container: /config
+          description:
+            en_us: Contains all configuration files.
+        - container: /media/frigate
+          description:
+            en_us: Contains database and all media files.
+    cap_add: []
+    network_mode: bridge
+x-casaos:
+  architectures:
+    - amd64
+    - arm64
+    - arm
+  author: mr-manuel
+  category: Surveillance
+  description:
+    en_us: >
+      Use of a Google Coral Accelerator is optional, but highly recommended.
+  developer: Blake Blackshear
+  hostname: ""
+  icon: https://raw.githubusercontent.com/mr-manuel/CasaOS-HomeAutomation-AppStore/latest/Apps/Frigate/icon.png
+  index: /
+  is_uncontrolled: false
+  main: frigate
+  port_map: "5000"
+  project_url: https://github.com/mr-manuel/CasaOS-HomeAutomation-AppStore
+  scheme: http
+  store_app_id: frigate
+  title:
+    custom: ""
+    en_us: Frigate NVR
