@@ -1,15 +1,215 @@
 {
   "name": "Duy CasaOS App Store",
   "description": "Kho Docker Compose cho CasaOS của Duy",
-  "version": "1.1.2-amd64fix",
+  "version": "1.1.3-archcompat",
   "apps": [
-    {"name":"9router","title":"9Router","description":"9Router AI gateway/router","icon":"Apps/9router/icon.svg","compose":"Apps/9router/docker-compose.yml","app":"Apps/9router/app.json"},
-    {"name":"shop-admin","title":"Shop Admin","description":"Web quản lý shop/admin","icon":"Apps/shop-admin/icon.svg","compose":"Apps/shop-admin/docker-compose.yml","app":"Apps/shop-admin/app.json"},
-    {"name":"yduc-booking-v2","title":"Y Đức Booking V2","description":"Web booking Y Đức","icon":"Apps/yduc-booking-v2/icon.svg","compose":"Apps/yduc-booking-v2/docker-compose.yml","app":"Apps/yduc-booking-v2/app.json"},
-    {"name":"frigate-nvr","title":"Frigate NVR","description":"NVR AI camera Frigate","icon":"Apps/frigate-nvr/icon.svg","compose":"Apps/frigate-nvr/docker-compose.yml","app":"Apps/frigate-nvr/app.json"},
-    {"name":"picoclaw-ai","title":"PicoClaw AI","description":"PicoClaw AI launcher","icon":"Apps/picoclaw-ai/icon.svg","compose":"Apps/picoclaw-ai/docker-compose.yml","app":"Apps/picoclaw-ai/app.json"},
-    {"name":"web-thi-ai-bao-mat","title":"Web Thi AI Bảo Mật","description":"Web thi AI bảo mật","icon":"Apps/web-thi-ai-bao-mat/icon.svg","compose":"Apps/web-thi-ai-bao-mat/docker-compose.yml","app":"Apps/web-thi-ai-bao-mat/app.json"},
-    {"name":"personal-timesheet","title":"Personal Timesheet","description":"Ứng dụng chấm công cá nhân","icon":"Apps/personal-timesheet/icon.svg","compose":"Apps/personal-timesheet/docker-compose.yml","app":"Apps/personal-timesheet/app.json"},
-    {"name":"github-release-guard","title":"GitHub Release Guard","description":"Upload scan publish GitHub releases","icon":"Apps/github-release-guard/icon.svg","compose":"Apps/github-release-guard/docker-compose.yml","app":"Apps/github-release-guard/app.json"}
+    {
+      "name": "9router",
+      "title": "9Router",
+      "description": "9Router AI gateway/router",
+      "icon": "Apps/9router/icon.svg",
+      "compose": "Apps/9router/docker-compose.yml",
+      "app": "Apps/9router/app.json",
+      "architecture": [
+        "amd64",
+        "arm64"
+      ],
+      "architectures": [
+        "amd64",
+        "arm64"
+      ],
+      "arch": [
+        "amd64",
+        "arm64"
+      ],
+      "supported_architectures": [
+        "amd64",
+        "arm64"
+      ]
+    },
+    {
+      "name": "shop-admin",
+      "title": "Shop Admin",
+      "description": "Web quản lý shop/admin",
+      "icon": "Apps/shop-admin/icon.svg",
+      "compose": "Apps/shop-admin/docker-compose.yml",
+      "app": "Apps/shop-admin/app.json",
+      "architecture": [
+        "amd64",
+        "arm64"
+      ],
+      "architectures": [
+        "amd64",
+        "arm64"
+      ],
+      "arch": [
+        "amd64",
+        "arm64"
+      ],
+      "supported_architectures": [
+        "amd64",
+        "arm64"
+      ]
+    },
+    {
+      "name": "yduc-booking-v2",
+      "title": "Y Đức Booking V2",
+      "description": "Web booking Y Đức",
+      "icon": "Apps/yduc-booking-v2/icon.svg",
+      "compose": "Apps/yduc-booking-v2/docker-compose.yml",
+      "app": "Apps/yduc-booking-v2/app.json",
+      "architecture": [
+        "amd64",
+        "arm64"
+      ],
+      "architectures": [
+        "amd64",
+        "arm64"
+      ],
+      "arch": [
+        "amd64",
+        "arm64"
+      ],
+      "supported_architectures": [
+        "amd64",
+        "arm64"
+      ]
+    },
+    {
+      "name": "frigate-nvr",
+      "title": "Frigate NVR",
+      "description": "NVR AI camera Frigate",
+      "icon": "Apps/frigate-nvr/icon.svg",
+      "compose": "Apps/frigate-nvr/docker-compose.yml",
+      "app": "Apps/frigate-nvr/app.json",
+      "architecture": [
+        "amd64",
+        "arm64",
+        "arm"
+      ],
+      "architectures": [
+        "amd64",
+        "arm64",
+        "arm"
+      ],
+      "arch": [
+        "amd64",
+        "arm64",
+        "arm"
+      ],
+      "supported_architectures": [
+        "amd64",
+        "arm64",
+        "arm"
+      ]
+    },
+    {
+      "name": "picoclaw-ai",
+      "title": "PicoClaw AI",
+      "description": "PicoClaw AI launcher",
+      "icon": "Apps/picoclaw-ai/icon.svg",
+      "compose": "Apps/picoclaw-ai/docker-compose.yml",
+      "app": "Apps/picoclaw-ai/app.json",
+      "architecture": [
+        "amd64",
+        "arm64"
+      ],
+      "architectures": [
+        "amd64",
+        "arm64"
+      ],
+      "arch": [
+        "amd64",
+        "arm64"
+      ],
+      "supported_architectures": [
+        "amd64",
+        "arm64"
+      ]
+    },
+    {
+      "name": "web-thi-ai-bao-mat",
+      "title": "Web Thi AI Bảo Mật",
+      "description": "Web thi AI bảo mật",
+      "icon": "Apps/web-thi-ai-bao-mat/icon.svg",
+      "compose": "Apps/web-thi-ai-bao-mat/docker-compose.yml",
+      "app": "Apps/web-thi-ai-bao-mat/app.json",
+      "architecture": [
+        "amd64",
+        "arm64"
+      ],
+      "architectures": [
+        "amd64",
+        "arm64"
+      ],
+      "arch": [
+        "amd64",
+        "arm64"
+      ],
+      "supported_architectures": [
+        "amd64",
+        "arm64"
+      ]
+    },
+    {
+      "name": "personal-timesheet",
+      "title": "Personal Timesheet",
+      "description": "Ứng dụng chấm công cá nhân",
+      "icon": "Apps/personal-timesheet/icon.svg",
+      "compose": "Apps/personal-timesheet/docker-compose.yml",
+      "app": "Apps/personal-timesheet/app.json",
+      "architecture": [
+        "amd64",
+        "arm64"
+      ],
+      "architectures": [
+        "amd64",
+        "arm64"
+      ],
+      "arch": [
+        "amd64",
+        "arm64"
+      ],
+      "supported_architectures": [
+        "amd64",
+        "arm64"
+      ]
+    },
+    {
+      "name": "github-release-guard",
+      "title": "GitHub Release Guard",
+      "description": "Upload scan publish GitHub releases",
+      "icon": "Apps/github-release-guard/icon.svg",
+      "compose": "Apps/github-release-guard/docker-compose.yml",
+      "app": "Apps/github-release-guard/app.json",
+      "architecture": [
+        "amd64",
+        "arm64"
+      ],
+      "architectures": [
+        "amd64",
+        "arm64"
+      ],
+      "arch": [
+        "amd64",
+        "arm64"
+      ],
+      "supported_architectures": [
+        "amd64",
+        "arm64"
+      ]
+    }
+  ],
+  "architecture": [
+    "amd64",
+    "arm64"
+  ],
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "supported_architectures": [
+    "amd64",
+    "arm64"
   ]
 }

@@ -12,5 +12,18 @@
   "version": "1.0.1",
   "category": "AI",
   "port_map": "18800",
-  "store_app_id": "picoclaw-ai"
+  "store_app_id": "picoclaw-ai",
+  "architecture": [
+    "amd64",
+    "arm64"
+  ],
+  "arch": [
+    "amd64",
+    "arm64"
+  ],
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "unsupported_architectures": []
 }

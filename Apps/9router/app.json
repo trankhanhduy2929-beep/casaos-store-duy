@@ -12,5 +12,18 @@
   "version": "1.0.1",
   "category": "Network",
   "port_map": "20128",
-  "store_app_id": "9router"
+  "store_app_id": "9router",
+  "architecture": [
+    "amd64",
+    "arm64"
+  ],
+  "arch": [
+    "amd64",
+    "arm64"
+  ],
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "unsupported_architectures": []
 }

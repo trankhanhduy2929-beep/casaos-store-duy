@@ -12,5 +12,18 @@
   "version": "1.0.1",
   "category": "Productivity",
   "port_map": "5555",
-  "store_app_id": "personal-timesheet"
+  "store_app_id": "personal-timesheet",
+  "architecture": [
+    "amd64",
+    "arm64"
+  ],
+  "arch": [
+    "amd64",
+    "arm64"
+  ],
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "unsupported_architectures": []
 }

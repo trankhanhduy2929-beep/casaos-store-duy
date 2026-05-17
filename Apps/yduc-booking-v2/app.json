@@ -12,5 +12,18 @@
   "version": "1.0.1",
   "category": "Business",
   "port_map": "3008",
-  "store_app_id": "yduc-booking-v2"
+  "store_app_id": "yduc-booking-v2",
+  "architecture": [
+    "amd64",
+    "arm64"
+  ],
+  "arch": [
+    "amd64",
+    "arm64"
+  ],
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "unsupported_architectures": []
 }

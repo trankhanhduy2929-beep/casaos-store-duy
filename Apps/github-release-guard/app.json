@@ -12,5 +12,18 @@
   "version": "1.0.1",
   "category": "Developer",
   "port_map": "5566",
-  "store_app_id": "github-release-guard"
+  "store_app_id": "github-release-guard",
+  "architecture": [
+    "amd64",
+    "arm64"
+  ],
+  "arch": [
+    "amd64",
+    "arm64"
+  ],
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "unsupported_architectures": []
 }

@@ -12,5 +12,18 @@
   "version": "1.0.1",
   "category": "Education",
   "port_map": "1234",
-  "store_app_id": "web-thi-ai-bao-mat"
+  "store_app_id": "web-thi-ai-bao-mat",
+  "architecture": [
+    "amd64",
+    "arm64"
+  ],
+  "arch": [
+    "amd64",
+    "arm64"
+  ],
+  "supported_architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "unsupported_architectures": []
 }
