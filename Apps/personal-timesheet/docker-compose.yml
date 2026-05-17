@@ -1,6 +1,7 @@
 name: personal-timesheet
 services:
   personal-timesheet:
+    platform: linux/amd64
     image: ghcr.io/trankhanhduy2929-beep/personal-timesheet:latest
     container_name: personal-timesheet
     restart: unless-stopped
@@ -23,6 +24,9 @@ services:
     privileged: false
 
 x-casaos:
+  architecture:
+    - amd64
+    - arm64
   architectures:
     - amd64
     - arm64

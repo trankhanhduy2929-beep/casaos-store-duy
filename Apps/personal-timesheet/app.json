@@ -9,7 +9,7 @@
     "amd64",
     "arm64"
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "Productivity",
   "port_map": "5555",
   "store_app_id": "personal-timesheet",

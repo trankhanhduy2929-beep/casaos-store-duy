@@ -1,6 +1,7 @@
 name: github-release-guard
 services:
   github-release-guard:
+    platform: linux/amd64
     image: ghcr.io/trankhanhduy2929-beep/github-release-guard:latest
     container_name: github-release-guard
     restart: unless-stopped
@@ -27,6 +28,9 @@ services:
     privileged: false
 
 x-casaos:
+  architecture:
+    - amd64
+    - arm64
   architectures:
     - amd64
     - arm64

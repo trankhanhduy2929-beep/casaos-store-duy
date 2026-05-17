@@ -1,6 +1,7 @@
 name: yduc-booking-v2
 services:
   yduc-booking-v2:
+    platform: linux/amd64
     image: ghcr.io/trankhanhduy2929-beep/yduc-booking-v2:latest
     container_name: yduc-booking-v2
     restart: unless-stopped
@@ -22,6 +23,9 @@ services:
     privileged: false
 
 x-casaos:
+  architecture:
+    - amd64
+    - arm64
   architectures:
     - amd64
     - arm64

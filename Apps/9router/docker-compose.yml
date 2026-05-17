@@ -28,6 +28,9 @@ services:
     network_mode: bridge
     privileged: false
 x-casaos:
+  architecture:
+    - amd64
+    - arm64
   architectures:
     - amd64
     - arm64

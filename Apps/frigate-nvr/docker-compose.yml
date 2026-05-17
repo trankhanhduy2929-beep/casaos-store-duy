@@ -108,6 +108,10 @@ services:
     cap_add: []
     network_mode: bridge
 x-casaos:
+  architecture:
+    - amd64
+    - arm64
+    - arm
   architectures:
     - amd64
     - arm64

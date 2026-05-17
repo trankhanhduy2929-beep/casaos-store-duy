@@ -10,7 +10,7 @@
     "arm64",
     "arm"
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "Surveillance",
   "port_map": "5000",
   "store_app_id": "frigate-nvr-duy",

@@ -1,6 +1,7 @@
 name: web-thi-ai-bao-mat
 services:
   web-thi-ai-bao-mat:
+    platform: linux/amd64
     image: ghcr.io/trankhanhduy2929-beep/web-thi-ai-bao-mat:latest
     container_name: web-thi-ai-bao-mat
     restart: unless-stopped
@@ -20,6 +21,9 @@ services:
     privileged: false
 
 x-casaos:
+  architecture:
+    - amd64
+    - arm64
   architectures:
     - amd64
     - arm64

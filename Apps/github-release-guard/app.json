@@ -9,7 +9,7 @@
     "amd64",
     "arm64"
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "Developer",
   "port_map": "5566",
   "store_app_id": "github-release-guard",

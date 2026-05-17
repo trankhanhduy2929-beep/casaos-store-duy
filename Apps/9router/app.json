@@ -9,7 +9,7 @@
     "amd64",
     "arm64"
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "Network",
   "port_map": "20128",
   "store_app_id": "9router",
